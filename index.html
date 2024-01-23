@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <body>
+        <header class="container-fluid text-center text-white bg-dark p-2 weather-header">
+          <h1>Check the weather of the city you are visiting!</h1>
+        </header>
+
+    <div class="container-fluid" style="max-width: 1400px">
+        <div class="row">
+          <aside class="col-lg-3 pb-3">
+            <h2 id="form-heading" class="mt-1 h3 form-label">
+              Search for a City:
+            </h2>
+            <form id="search-form" class="form">
+              <div class="form-inline form-group">
+                <div class="input-group">
+                  <input class="form-input weather-search " type="text" id="search-input" placeholder="London"
+                    aria-labelledby="form-heading" aria-controls="today forecast" />
+                  <div class="input-group-append">
+                    <!-- type="submit"  -->
+                    <button 
+                    class="btn btn-primary search-button" id="search-button" aria-label="submit search">
+                      Search
+                    </button>
+                    <hr class="hr weather-hr" />
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="list-group col" id="history"></div>
+          </aside>
+    
+          <div class="col-lg-9 pb-3">
+            <section id="today" class="mt-3 border border-dark" role="region" aria-live="polite"></section>
+            <div><h2>5-day Forecast:</h2></div>
+            <section id="forecast" class="row mt-3" role="region" aria-live="polite"></section>
+          </div>
+        </div>
+      </div>
+
+      <div id="openweathermap-widget-11"></div>
+<script src='//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/d3.min.js'></script><script>window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];  window.myWidgetParam.push({id: 11,cityid: '2643743',appid: 'f174556e02b2ab9cd3e99d04ccde8d24',units: 'metric',containerid: 'openweathermap-widget-11',  });  (function() {var script = document.createElement('script');script.async = true;script.charset = "utf-8";script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(script, s);  })();</script>
+    
+
+
+
+
+    <script src="script.js"></script>  
+</body>
+</html>
